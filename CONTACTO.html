@@ -43,7 +43,7 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="INICIO.html">
+          <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="">
             <span>
               Bienvenidos
@@ -63,12 +63,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="CONTACTO.html">Contactos</a>
                 </li>
-
-
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+
             </div>
         </nav>
       </div>
@@ -88,30 +84,23 @@
       <p class="text-center">
       Envíanos un mensaje , te contestaremos lo antes posible
 
-
       </p>
-      <div class="">
-        <div class="contact_section-container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <div class="contact-form">
-                <form action="https://formsubmit.co/themegatroll3000@gmail.com" method="POST" />
-                  <div>
-                    <input type="text" placeholder="NOMBRE">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="NÚMERO DE TELEFONO">
-                  </div>
-                  <div>
-                    <input type="email" placeholder="EMAIL">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="MENSAJE" class="input_message">
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover">
-                      Enviar
-                    </button>
+      <form action="https://formsubmit.co/themegatroll3000@gmail.com" method="POST">
+        <ul>
+         <li>
+           <label for="name">Nombre:</label>
+           <input type="text" id="name" name="user_name" />
+         </li>
+         <li>
+           <label for="mail">Correo electrónico:</label>
+           <input type="email" id="mail" name="user_email" />
+         </li>
+         <li>
+           <label for="msg">Mensaje:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </li>
+         <button type="submit">Enviar</button>
+       
                   </div>
                 </form>
               </div>
